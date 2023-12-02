@@ -1,0 +1,413 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Matt Tsai} \\ \vspace{1pt}
+    \small +1 778 522 3458 $|$ \href{mailto:cta106@sfu.ca}{\underline{cta106@sfu.ca}} $|$ 
+    \href{https://www.linkedin.com/in/matt-tsai-90a3291a3/}{\underline{linkedin.com/in/matttsai}} $|$ 
+    \href{https://github.com/asd881018}{\underline{github.com/matttsai}}
+\end{center}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Java, Git, PostgreSQL, HTML, CSS, JavaScript, Python, MATLAB} \\
+     \textbf{Frameworks}{: React, Node.js, Express} \\
+     \textbf{Tools}{: RedHat Linux, WebLogic, Oracle SOA suite, WildFly, JBoss, GlassFish, Glowroot} \\
+     \textbf{Concepts}{: Middleware, OOP, MVC, REST API, Multithreading, Agile Methodology, Testing}
+    }}
+ \end{itemize}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Simon Fraser University}{Burnaby, BC, Canada}
+      {Bachelor of Science in Computing Science; Sep 2020 -- Aug 2024 (Expected)}{}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {DBA/Middleware Admin Co-op}{May 2022 -- Dec 2022}
+      {BC Liquor Distribution Branch}{Burnaby, BC, Canada}
+      \resumeItemListStart
+        \resumeItem{Transitioned JBoss services to WildFly with other teams, resulting in an https://www.overleaf.com/project/656a816a1937f4853f7d8e1aannual cost reduction of \$43,200 USD.}
+        \resumeItem{Configured RWP\textsuperscript{*}Load Simulator to accurately simulate real-world workloads on an Oracle database, ensuring robust testing and performance evaluation.}
+        \resumeItem{Managed and optimized multiple application components in middleware and database.}
+        \resumeItem{Conducted thorough analysis of server services using application performance monitoring tools, such as Glowroot.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  %   \resumeSubheading
+  %     {Information Technology Support Specialist}{Sep. 2018 -- Present}
+  %     {Southwestern University}{Georgetown, TX}
+  %     \resumeItemListStart
+  %       \resumeItem{Communicate with managers to set up campus computers used on campus}
+  %       \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+  %       \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+  %   \resumeItemListEnd
+
+  %   \resumeSubheading
+  %     {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+  %     {Southwestern University}{Georgetown, TX}
+  %     \resumeItemListStart
+  %       \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+  %       \resumeItem{Developed a game in Java to test the generated dungeons}
+  %       \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+  %       \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+  %       \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+  %       \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+  %     \resumeItemListEnd
+
+  % \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Technical Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Social Game Platform} $|$ \emph{C++}}{Oct 2023 -- Dec 2023}
+        \resumeItemListStart
+            \resumeItem{Created a game platform to load the game from a customized grammar game file.}
+            \resumeItem{Implemented a robust parsing system using the Tree-sitter library, transforming game files into abstract syntax trees (AST).}
+            \resumeItem{Engineered a multi-player gaming environment, enabling users to participate in real-time gameplay sessions with others.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Tan Compiler} $|$ \emph{Java}}{May 2023 -- Aug 2023}
+        \resumeItemListStart
+            \resumeItem{Implemented primitive types, compound types (strings, arrays, int), branching, loops, type promotion and function calls.}
+            \resumeItem{Applied Agile principles by using test-driven development for every iteration of the language specification.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Security Camera System} $|$ \emph{C, React.js, Node.js, HTML/CSS}}{Feb 2023 -- Apr 2023}
+        \resumeItemListStart
+            \resumeItem{Implemented a home security full-stack and embedded system with remote monitoring.}
+            \resumeItem{Utilized Beaglebone hardware with C to capture, process, and synchronize audio, video, and motion sensor data.}
+            \resumeItem{Employed UDP protocol to enable real-time audio and video streaming to a website developed with React and Node.js.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{H\&M Recommendation Engine} $|$ \emph{Python, Node.js, HTML/CSS}}{Mar 2022 -- Apr 2022}
+        \resumeItemListStart
+            \resumeItem{Recommended the product based on the customer's transaction history.}
+            \resumeItem{Analyzed in-depth analysis of H\&M customer transaction data to extract valuable insights and identify trends.}
+            \resumeItem{Developed a sequential model for product recommendations, resulting in a 13\% increase in the prediction accuracy rate.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{SFU Online Chat Website} $|$ \emph{JavaScript, Node.js, PostgreSQL, HTML/CSS}}{Feb 2021 -- Apr 2021}
+        \resumeItemListStart
+            \resumeItem{Built the chat website, including a login system, chat room, video room and dashboard.}
+            \resumeItem{Utilized PostgreSQL as the backend database and built a dynamic webpage using HTML, CSS, and JavaScript.}
+            \resumeItem{Designed RESTful API with Node.js to connect front-end and back-end.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+%
+
+
+%-----------LEADERSHIP EXPERIENCE-----------
+\section{Leadership Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vice President of Marketing}{Jun 2021 -- Aug 2023}
+      {SFU Taiwanese Association}{Burnaby, BC, Canada}
+      \resumeItemListStart
+        \resumeItem{Created the digital membership card by Pass2U with HTML and CSS, achieving a 56\% increase in revenue.}
+        \resumeItem{Applied graphic design and photography to social media posting, resulting in a 129\% view growth in non-followers.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Matt Tsai} \\ \vspace{1pt}
+    \small +1 778 522 3458 $|$ \href{mailto:cta106@sfu.ca}{\underline{cta106@sfu.ca}} $|$ 
+    \href{https://linkedin.com/in/matttsai}{\underline{linkedin.com/in/matttsai}} $|$
+    \href{https://github.com/matttsai}{\underline{github.com/matttsai}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Simon Fraser University}{Burnaby, BC, Canada}
+      {Bachelor of Science in Computing Science; Sep 2020 -- Aug 2024 (Expected)}{}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {DBA/Middleware Admin Co-op}{May 2022 -- Dec 2022}
+      {BC Liquor Distribution Branch}{Burnaby, BC, Canada}
+      \resumeItemListStart
+        \resumeItem{Transitioned JBoss services to WildFly with other teams, resulting in an annual cost reduction of \$43,200 USD.}
+        \resumeItem{Configured RWP\textsuperscript{*}Load Simulator to accurately simulate real-world workloads on an Oracle database, ensuring robust testing and performance evaluation.}
+        \resumeItem{Managed and optimized multiple application components in middleware and database.}
+        \resumeItem{Conducted thorough analysis of server services using application performance monitoring tools, such as Glowroot.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Technical Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{TAN Compiler} $|$ \emph{Java}}{May 2023 -- Aug 2023}
+        \resumeItemListStart
+            \resumeItem{Implemented primitive types, compound types (strings, arrays, int), branching, loops, type promotion, and function calls.}
+            \resumeItem{Applied Agile principles by using test-driven development for every iteration of the language specification.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Security Camera System} $|$ \emph{C, React.js, Node.js, HTML/CSS}}{Feb 2023 -- Apr 2023}
+        \resumeItemListStart
+            \resumeItem{Implemented a home security full-stack and embedded system with remote monitoring.}
+            \resumeItem{Utilized Beaglebone hardware with C to capture, process, and synchronize audio, video, and motion sensor data.}
+            \resumeItem{Employed UDP protocol to enable real-time audio and video streaming to a website developed with React and Node.js.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{H\&M Recommendation Engine} $|$ \emph{Python, Node.js, HTML/CSS}}{Mar 2022 -- Apr 2022}
+        \resumeItemListStart
+            \resumeItem{Recommended the product based on the customer's transaction history.}
+            \resumeItem{Analyzed in-depth analysis of H\&M customer transaction data to extract valuable insights and identify trends.}
+            \resumeItem{Developed a sequential model for product recommendations, resulting in a 13\% increase in the prediction accuracy rate.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{SFU Online Chat Website} $|$ \emph{JavaScript, Node.js, PostgreSQL, HTML/CSS}}{Feb 2021 -- Apr 2021}
+        \resumeItemListStart
+            \resumeItem{Built the chat website, including a login system, chat room, video room and dashboard.}
+            \resumeItem{Utilized PostgreSQL as the backend database and built a dynamic webpage using HTML, CSS, and JavaScript.}
+            \resumeItem{Designed RESTful API with Node.js to connect front-end and back-end.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item
